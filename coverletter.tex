@@ -46,6 +46,17 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
+% My variables to change here
+%
+%
+\newcommand{\jobTitle}{\large Engineering Co-op, Electrical \& Instrumentation}
+\newcommand{\company}{Fortis BC}
+\newcommand{\address}{16705 Fraser Highway \\ Surrey BC \\ V4N 0E8}
+%
+%
+%
+
+
 \begin{document}
 \name{Aman Nijjar}
 \tagline{Fourth Year Computer Engineering Undergraduate}
@@ -64,25 +75,24 @@
 \AtBeginEnvironment{itemize}{\small}
 
 % Insert the Address and stuff
-\textbf{\color{VividPurple}Open Robotics}\\
-3 Fusionopolis Way \\ 
-\#13-21 Symbiosis \\ 
-Singapore 138633  \linebreak \\
+\textbf{\color{VividPurple}\company}\\
+\address  \linebreak \\
 
+\cvsection{Letter of Intent - \jobTitle}
+To \company, \linebreak \\
 
+My name is Aman Nijjar and I am a 4th year computer engineering student from the University of Victoria, located in Victoria, BC Canada. I wish to start a Co-op with your company this upcoming September. A little about myself: I enjoy hiking around the local lakes, trying different foods, and helping out at my uncles auto shop. My peers describe me as spontaneous, confident, and motivated because of my ability to execute activities with little to no planning time. A 24-hour local expedition eating foods in different parts of Vancouver BC, an early morning picnic at Cadboro Bay, and after-hours basketball sessions with the old team-mates are a few instances. \linebreak \\
 
-\cvsection{Letter of Intent - Engineering Intern (Singapore)}
-To Open Robotics, \linebreak \\
+That said, I am a motivated student experienced with preparing documents/reports from my time as President of an underwater robotics club, comfortable speaking and explaining technical work, and have learned a wide-range of skills after taking an electrical drive and power class at UVic. I am experienced with SolidWorks in regards to 2D/3D drafting software and I have a clean, class 5 driver's licence. I am currently pursuing an internship with the Autonomous Underwater Vehicle Interdisciplinary Club (AUVIC) as a Junior Electronics Engineer with my main task being to integrate a CAN bus into the next autonomous underwater vehicle, Trident. To that end, I built an affordable USB-to-CAN dongle to test sending messages to the embedded controllers. \linebreak \\
 
-My name is Aman Nijjar and I am a 4th year computer engineering student from the University of Victoria, located in Victoria, BC Canada. I wish to start an internship with your company this upcoming September. A little about myself: my hobbies include hiking around the local lakes, trying different foods, and helping out at my uncles auto shop. My peers describe me as spontaneous, confident, and motivated because of my ability to execute activities with little to no planning time. Some of my best memories are plans that are executed on the fly: a 24-hour local expedition eating foods in different parts of Vancouver BC, an early morning picnic at Cadboro Bay, after-hours basketball sessions with the old teammates, etc. \linebreak \\
+In my electrical drive class, I had the opportunity to design a weight-shifting system for an aircraft with the same requirements and information my professor was given when he took the job. This system's purpose was to minimize the pitch induced by gusts of wind by shifting a cart along a 2m long track. My team came up with the solution to use a pulley system with a chain to push/pull the cart; technically correct as we justified our design, however it was not the preferred solution. long-story short, we did very well and I learned instead of designing something ground-up, I should spend more time finding a good  existing design and tweak it to fit my requirements.  \linebreak \\
+%That said, I am a motivated student with solid programming skills and a passion for autonomous vehicles. I am currently pursuing an internship with the Autonomous Underwater Vehicle Interdisciplinary Club (AUVIC) as a Junior Electronics Engineer with my main task being to integrate a CAN bus into the next autonomous underwater vehicle, Trident. Currently, I am in the process of making an affordable USB-to-CAN dongle for testing and a ROS package to communicate with the CAN bus. \linebreak \\
 
-That said, I am a motivated student with solid programming skills and a passion for autonomous vehicles. I am currently pursuing an internship with the Autonomous Underwater Vehicle Interdisciplinary Club (AUVIC) as a Junior Electronics Engineer with my main task being to integrate a CAN bus into the next autonomous underwater vehicle, Trident. Currently, I am in the process of making an affordable USB-to-CAN dongle for testing and a ROS package to communicate with the CAN bus. \linebreak \\
+%I designed this package by using socketcan\_bridge and socketcan\_interface from ros\_canopen and added my own C++ node called can\_manager. can\_manager takes service requests from the ROS side and publishes CAN messages to topics from the embedded side. I have tested this node using gunit and also created a continuous integration workflow so that members can link their unit tests to allow us to catch bugs before merging to the main repository.\linebreak \\
 
-I designed this package by using socketcan\_bridge and socketcan\_interface from ros\_canopen and added my own C++ node called can\_manager. can\_manager takes service requests from the ROS side and publishes CAN messages to topics from the embedded side. I have tested this node using gunit and also created a continuous integration workflow so that members can link their unit tests to allow us to catch bugs before merging to the main repository.\linebreak \\
+%Besides software development, I also am undertaking a leadership/project-manager role. On the mechanical side of this project, I outlined the constraints and gave inspiration for the next model. Moreover, I communicate information with the faculty of engineering, clubs, and outside organizations regarding funding and social events with the rest of the team.\linebreak \\
 
-Besides software development, I also am undertaking a leadership/project-manager role. On the mechanical side of this project, I outlined the constraints and gave inspiration for the next model. Moreover, I communicate information with the faculty of engineering, clubs, and outside organizations regarding funding and social events with the rest of the team.\linebreak \\
-
-Thank you for taking the time to read my application. I would like to pursue an internship with Open Robotics this upcoming September and I am available to work up-to 8 months. I am a Canadian Citizen, however I believe I can gain authorization to work in Singapore, but I prefer to work remotely if that is possible. If my background, skills, and experience is in line with what Open Robotics looks for in their interns, feel free to contact me at anijjar@uvic.ca anytime, otherwise, I am open to suggestions on how to improve myself so I can be a better candidate in the future. \linebreak \linebreak \\
+Thank you for taking the time to read my application. If my background, skills, and experience is in line with what {\company} looks for in their co-op students, please feel free to contact me at anijjar@uvic.ca. \linebreak \linebreak \\ %otherwise, I am open to suggestions on how to improve myself so I can be a better candidate in the future. \linebreak \linebreak \\
 
 All the best, \linebreak \linebreak \\
 
