@@ -1,0 +1,187 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% This stuff ensures no hypens in paragraphs.
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+%
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{Black}{HTML}{000000}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{Black}
+\colorlet{body}{SlateGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+% Change the key words here
+%
+% \large
+\newcommand{\jobTitle}{\large Robotics Engineering Co-op Student (8M)}
+\newcommand{\jobTitlePara}{Robotics Engineering Student}
+\newcommand{\company}{Sanctuary AI}
+\newcommand{\address}{1010 Raymur Avenue \\Vancouver, BC \\ CA V6A3T2}
+
+\begin{document}
+\name{Amanpreet Singh Nijjar}
+\tagline{Fourth Year Computer Engineering Undergraduate}
+\personalinfo{
+  \email{anijjar@uvic.ca}
+  \phone{604-500-5071}
+  \mailaddress{11988 237st, Maple Ridge, BC V4R 2C8}
+  \linkedin{ca.linkedin.com/in/anijjar19}
+  \github{github.com/anijjar}
+  \linebreak
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+% Insert the Address and stuff
+%\textbf{\color{VividPurple}\company}\\ \address  \linebreak \\
+
+\cvsection{Letter of Intent - \jobTitle}
+Attention \company, \linebreak \\
+
+My name is Amanpreet Singh Nijjar and I am a 4th year computer engineering student from the University of Victoria, located in Victoria, BC Canada. I wish to start a co-op with your company this upcoming September as a {\jobTitlePara}. A little about myself: I enjoy hiking around the local lakes of my home, trying different foods, and helping out at my uncles auto shop. My peers describe me as spontaneous, confident, and motivated because of my ability to execute activities with little to no planning time. My best experiences have been a 24-hour local expedition eating foods in different parts of Vancouver BC, an early morning picnic at Cadboro Bay, and after-hours basketball sessions with the old team-mates.\linebreak \\
+
+As I am working towards my Computer Engineering degree, I have been developing my skills with C++ and Python from designing a system for an autonomous underwater vehicle. I am familiar with the Java syntax, but practice object-oriented programming with C++. I have designed, created, and executed automation scripts using PyUnit through the Robot Operating System framework and in my Engineering System Software class, I made a game where you need to help a person escape a room using the command-line interface. In my current co-op, I have gotten the software division to adopt continuous integration using Github Actions. I am also the president of an autonomous robotics club. I am able to work in a fast-paced environment.\linebreak \\
+
+
+
+%  Celestica ==================================================================================================================
+%My name is Amanpreet Singh Nijjar and I am a 4th year computer engineering student from the University of Victoria, located in Victoria, BC Canada. I wish to start a co-op with your company this upcoming September as a {\jobTitlePara}. A little about myself: I enjoy hiking around the local lakes of my home, trying different foods, and helping out at my uncles auto shop. My peers describe me as spontaneous, confident, and motivated because of my ability to execute activities with little to no planning time. My best experiences have been a 24-hour local expedition eating foods in different parts of Vancouver BC, an early morning picnic at Cadboro Bay, and after-hours basketball sessions with the old team-mates. I will talk about my experience introducing Jira and continuous Integration to the software division of the Autonomous Underwater Vehicle Interdisciplinary Club (AUVIC).\linebreak \\
+
+%In my co-op with the Autonomous Underwater Vehicle Interdisciplinary Club (AUVIC) as a Junior Electronics Engineer, on top of my work with PCB Layout, I  was responsible with the software development and project management. In the four month period, I have made the software division use both Continuous Integration (CI) and Agile with Github Actions and Jira, respectively. Although the club has been established for many years, the software division has been weak since its creation due to rapid creation of bugs and long development time. To address these issues, I switched our process to agile and made a few rules with development: \linebreak \\ 
+
+%First: All tests must pass in the CI pipepline to ensure the system remains stable before considering a pull-request. A CI pipeline is used to automate the testing process to confirm stability before reviewing a pull-request. Approximately 1 month is spent writing tests to test all planned methods.\linebreak \\
+
+%Second: Make shorter tickets/issues. In the past, issues were large and all encompassing; I want to move away from that style. Since we only have volunteers, we need to really break down the issues into tasks that can be completed in a single sitting. This has a psychological benefit as-well, if people feel better of completing one ticket, they'll be inclined to continue to the next, and the next, etc.\linebreak \\
+
+%Third: Make a goal for the semester and stick with it. This can be done using the roadmap feature on Jira. Keeping everyone on the same page will produce better results compared to the alternative - everyone doing their own thing.\linebreak \\
+
+%Moreover, I laid the groundwork for installing a controller-area network within the autonomous underwater vehicle. I wrote the interface with the Robot Operating System using C++ and Python and tested the code using a virtual CAN bus on SocketCAN. I validated my design using regression-level testing by making a Python script to simulate the reaction of one of the hardware we use in the AUV. In regards to testing, I had the software team adopt continuous-integration techniques using github actions; now all pull requests must pass the CI tests before being merged into the master repository.  \linebreak \\
+
+%Thank you for taking the time to read my application. If my background, skills, and experience is in line with what {\company} looks for in their co-op students, please feel free to contact me at anijjar@uvic.ca. \linebreak \linebreak
+
+% KJ Controls ====================================================================================================================
+%My name is Amanpreet Singh Nijjar and I am a 4th year computer engineering student from the University of Victoria, located in Victoria, BC Canada. I wish to start a co-op with your company this upcoming September. A little about myself: I enjoy hiking around the local lakes of my home, trying different foods, and helping out at my uncles auto shop. My peers describe me as spontaneous, confident, and motivated because of my ability to execute activities with little to no planning time. My best experiences have been a 24-hour local expedition eating foods in different parts of Vancouver BC, an early morning picnic at Cadboro Bay, and after-hours basketball sessions with the old team-mates. \linebreak \\
+
+%That said, I believe my skills and experience match closely to the listed responsibilities and requirements: I have designed, simulated, and laid-out a printed circuit board to send acoustic signals in an underwater channel, I have done the same when I built a CAN-to-USB dongle to send/receive messages on a controller-area network (CAN). Moreover, I simulated an H-bridge inverter using LTspice for the purpose of validating my circuit. On the software side, I have developed in both C++ and Python to link the application code with embedded hardware in an autonomous underwater vehicle (AUV), which can be seen on my github's "software" repository. \linebreak \\
+
+%In my current co-op, I am designing a circuit board to send acoustic signals underwater to test a hydrophone system. This device accomplishes the task by using a mosfet H-bridge inverter to simulate an oscillating signal using DC input via complementary PWM-waves. Using the material I learned in my Antennas \& Propagation class, I designed a circular-polarized micro-strip antenna using the manufacture constraints on dielectric material and confirming the design using FEKO, an electro-magnetic simulation software. \linebreak \\
+
+%Moreover, I laid the groundwork for installing a controller-area network within the autonomous underwater vehicle. I wrote the interface with the Robot Operating System using C++ and Python and tested the code using a virtual CAN bus on SocketCAN. I validated my design using regression-level testing by making a Python script to simulate the reaction of one of the hardware we use in the AUV. In regards to testing, I had the software team adopt continuous-integration techniques using github actions; now all pull requests must pass the CI tests before being merged into the master repository.  \linebreak \\
+
+%I have developed strong organizational skills from my time as the president of the Autonomous Underwater Vehicle Interdisciplinary Club. I organized bi-weekly meeting to ensure all members are kept up to date with the happenings in the seperate teams. I also handle communicating with outside organizations, such as Huawei, Rainhouse, and Ocean Networks Canada. \linebreak \\
+
+%Thank you for taking the time to read my application. If my background, skills, and experience is in line with what {\company} looks for in their co-op students. Please feel free to contact me at anijjar@uvic.ca or call 604-500-5071. \linebreak \linebreak 
+
+
+%Synopsys ====================================================================================
+%My name is Aman Nijjar and I am a 4th year computer engineering student from the University of Victoria, located in Victoria, BC Canada. I wish to start a co-op with your company this upcoming September. A little about myself: I enjoy hiking around the local lakes of my home, trying different foods, and helping out at my uncles auto shop. My peers describe me as spontaneous, confident, and motivated because of my ability to execute activities with little to no planning time. My best experiences have been a 24-hour local expedition eating foods in different parts of Vancouver BC, an early morning picnic at Cadboro Bay, and after-hours basketball sessions with the old team-mates. \linebreak \\
+
+%That said, I believe my skills and experience match closely to the listed responsibilities and requirements: I have designed, simulated, and laid-out a printed circuit board to send acoustic signals in an underwater channel, I have done the same when I built a CAN-to-USB dongle to send/receive messages on a controller-area network (CAN). Moreover, I simulated an H-bridge inverter using LTspice for the purpose of validating my circuit. On the software side, I have developed in both C++ and Python to link the application code with embedded hardware in an autonomous underwater vehicle (AUV), which can be seen on my github's "software" repository. \linebreak \\
+
+%In my current co-op, I am designing a circuit board to send acoustic signals underwater to test a hydrophone system. This device accomplishes the task by using a mosfet H-bridge inverter to simulate an oscillating signal using DC input via complementary PWM-waves. Using the material I learned in my Antennas \& Propagation class, I designed a circular-polarized micro-strip antenna using the manufacture constraints on dielectric material and confirming the design using FEKO, an electro-magnetic simulation software. \linebreak \\
+
+%Moreover, I laid the groundwork for installing a controller-area network within the autonomous underwater vehicle. I wrote the interface with the Robot Operating System using C++ and Python and tested the code using a virtual CAN bus on SocketCAN. I validated my design using regression-level testing by making a Python script to simulate the reaction of one of the hardware we use in the AUV. In regards to testing, I had the software team adopt continuous-integration techniques using github actions; now all pull requests must pass the CI tests before being merged into the master repository.  \linebreak \\
+
+%I have developed strong organizational skills from my time as the president of the Autonomous Underwater Vehicle Interdisciplinary Club. I organized bi-weekly meeting to ensure all members are kept up to date with the happenings in the seperate teams. I also handle communicating with outside organizations, such as Huawei, Rainhouse, and Ocean Networks Canada. \linebreak \\
+
+%Thank you for taking the time to read my application. If my background, skills, and experience is in line with what {\company} looks for in their co-op students. Please feel free to contact me at anijjar@uvic.ca or call 604-500-5071. \linebreak \linebreak 
+
+
+% Lawrence Laboratory ---------------------------------------------------------------------------------------------------------------------------
+%My name is Amanpreet Singh Nijjar and I am a 4th year computer engineering student from the University of Victoria, located in Victoria BC, Canada. A little about myself as an individual: I enjoy eating food from different cultures, hiking around the lakes near my home, and programming common boardgames. I discovered this job posting from my uncle, Shan Bhangal, as he works as a web developer for the laboratory. I am an energetic and enthusiastic individual with an interest in real-time computing systems and communication technology. Moreover, I actively apply the theory I learned in the classroom to an autonomous underwater vehicle (AUV). \linebreak \\
+
+%I am able to work full time for the 12 weeks this fall. If needed, I can get accommodations from my family, so I can work on site if the laboratory has gone into phase 3. I am academically average, however, I have supplemented my standard learning with application; I have designed several printed circuit boards and tested them with logic analysers and various software. Moreover, I am the president/project-manager of a robotics team whose purpose is to design and build an AUV that tackles issues faced with AUV deployment. \linebreak \\
+
+%At my current co-op, I am designing a CAN bus communication system for an AUV. CAN is a communication standard that allows devices to communicate with one another without a host computer arbitrating who has priority on the bus. I linked the main software with the firmware on the devices, allowing applications on the main computer to retrieve information near instantly. \linebreak \\
+
+%As the leader of AUVIC, I spend a good amount of time scheduling meetings and keeping everyone on the same page. Creating information sheets, explaining mechanical projects and electronics to a software student, and engaging with representatives from technical companies such as Rainhouse Canada, Huawei Canada, and Ocean Networks Canada to discuss sponsorships, donations, and planning community events are a few of the tasks I personally handle. \linebreak \\
+%Thank you for taking the time to read my application. I am willing to do any pre-employment medical examinations. Please feel free to contact me at anijjar@uvic.ca if my skills, background, and experience matches your criteria. \linebreak \linebreak 
+
+
+% FOTIS BC --------------------------------------------------------------------------------------------------------------
+%My name is Aman Nijjar and I am a 4th year computer engineering student from the University of Victoria, located in Victoria, BC Canada. I wish to start a co-op with your company this upcoming September. A little about myself: I enjoy hiking around the local lakes of my home, trying different foods, and helping out at my uncles auto shop. My peers describe me as spontaneous, confident, and motivated because of my ability to execute activities with little to no planning time. My best experiences have been a 24-hour local expedition eating foods in different parts of Vancouver BC, an early morning picnic at Cadboro Bay, and after-hours basketball sessions with the old team-mates. \linebreak \\
+
+%That said, I believe my skills and experience match closely to the listed responsibilities and requirements: I have prepared schedules and maintained records from my time as the president of a robotics club, I have met and comfortably engaged with representatives from technical companies such as Rainhouse Canada, Huawei Canada, and Ocean Networks Canada to discuss sponsorships, donations, and planning events, and have taken classes on electrical power systems and drive systems. Moreover, I have knowledge of 2D/3D drafting from SolidWorks and I also have a valid class 5 driver's licence. \linebreak \\
+
+%In regards to technical ability, I am familiar with electrical systems and control communications. At my current co-op, I am designing a CAN bus communication system for an autonomous underwater vehicle. CAN is a communication standard that allows devices to communicate with one another without a host computer arbitrating who has priority on the bus. This decentralized design is popular with vehicles, but with the large list of standards available, it is reasonable to say it can be integrated to an existing gas system. \linebreak \\
+
+%Thank you for taking the time to read my application. If my background, skills, and experience is in line with what {\company} looks for in their co-op students, please feel free to contact me at anijjar@uvic.ca. \linebreak \linebreak 
+%---------------------------------------------------------------------------------------------------
+All the best, \linebreak \linebreak \\
+
+Amanpreet Singh Nijjar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
