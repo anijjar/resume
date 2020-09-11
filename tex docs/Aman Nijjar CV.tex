@@ -1,0 +1,282 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{Black}{HTML}{000000}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{Black}
+\colorlet{body}{SlateGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Amanpreet Singh Nijjar}
+\tagline{Fourth Year Computer Engineering Undergraduate Student}
+\personalinfo{
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{anijjar@uvic.ca}
+  \phone{604-500-5071}
+  \mailaddress{11988 237st, Maple Ridge, BC V4R 2C8}
+  %\location{Sunnyvale, CA}
+  %\homepage{marissamayr.tumblr.com}
+  %\twitter{@marissamayer}
+  \linkedin{ca.linkedin.com/in/anijjar19}
+  \github{github.com/anijjar}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\cvsection{Summary of Qualifications}
+\begin{itemize}
+  \item President of AUVIC: Leading a 15-member team to build an autonomous underwater vehicle (AUV).
+  \item 
+
+\end{itemize}
+  %\item Comfortable speaking professionally with representatives of different organizations.
+  %\item Experienced with analog circuit simulators (LTSpice) and scripting \\language (Python).
+  %\item Integrated SocketCAN drivers for ROS from ros\_canopen and built a C++ message handler to link the AUV embedded system to the ROS framework during the workterm with AUVIC.
+  %\item Created sprints and assigned tickets to members of AUVIC using Jira.
+  %\item Experienced with electrical, software, and mechanical development of an AUV.
+  %\item Built a website using Wordpress for AUVIC @ \href{http://www.auvic.com}{\color{blue}auvic.ca}
+  %\item Modelled a H-bridge inverter circuit on LTspice to drive a capacitve load.
+  %\item Researched and implemented a distrubuted-bus communication system using the Controller-Area Network (CAN) protocol for an AUV.
+%============================================
+\cvsection{Relevant Competencies}
+\cvsubsection{Communicating Ideas and Presentation}
+\begin{itemize}
+ 	\item Created an electrical overview of AUVIC's embedded system to show the power requirements and communication buses to people.
+ 	\item Organized meetings with representatives of Huawei, Rainhouse, Ocean Networks Canada, among others to discuss sponsorships and donations to AUVIC's project.
+ 	\item Created PowerPoint presentations on AUVIC's submarine and presented them to funding committees.
+\end{itemize}
+
+\cvsubsection{Electrical Design on Altium Designer}
+\begin{itemize}
+  \item Built a USB-to-CAN dongle that can connect a computer running linux or windows to read/send messages from the CAN bus.
+  \item Built a pinging device that can send 25kHz, 30kHz, 35kHz, and 40kH signals through a piezo electric transducer to test hydrophones.
+  \item Designed a circular-polarized patch antenna for a bluetooth module.
+\end{itemize}
+
+\cvsubsection{Control Communications and Electrical Systems}
+\begin{itemize}
+	\item Implemented CAN communication between nodes on an autonomous underwater vehicle. This design decentralized the system, allowing \\messages to be broadcast to all nodes, instead of point-to-point \\connection with USB.
+	\item Analysed a power distribution system for my electric power systems class. I used Matlab to run a Newton-Raphson and Gauss-Seidal \\algorithm to solve for missing voltages and reactive power. Moreover, I used PSSE to verify my algorithms. 
+	\item Designed a linear weight-shifting system for my electric drive class. \\Using the specifications my professor was given when he completed the task, my team came up with a valid solution using pulleys.
+\end{itemize}
+
+%\cvsubsection{Analog \& Mixed Signal Design}
+%\begin{itemize}
+%    \item Verified an mosfett H-bridge drive circuit using LTSpice.
+%    \item Schematic captured, and laid-out CAN-to-USB dongle \& a pinging \\device on Altium Designer with both digital and analog devices.
+%    \item Designed and verified a micro-strip antenna for a bluetooth module on FEKO EM simulator.
+%\end{itemize}
+
+% \cvsubsection{Software Development}
+% \begin{itemize}
+%     \item Wrote C firmware on a FreeRTOS device to program a temperature \\sensor and a humidity sensor over I2C.
+%     \item Implemented CAN communication between nodes on an AUV. This \\design decentralized the system, allowing messages to be broadcast to all nodes, instead of point-to-point connection with USB.
+%     \item Used multiple programming languages (C/C++/Python) to link ROS noetic on Ubuntu Focal with the AUV embedded system at AUVIC to channel messages over a CAN bus. 
+% \end{itemize}
+
+% \cvsubsection{Communicating Ideas and Presentation}
+% \begin{itemize}
+% 	\item Created an electrical overview of AUVIC's embedded system to show the power requirements and communication buses to people.
+% 	\item Organized meetings with representatives of Huawei, Rainhouse, Ocean Networks Canada, among others to discuss sponsorships and donations to AUVIC's project.
+% 	\item Created PowerPoint presentations on AUVIC's submarine and presented them to funding committees.
+% \end{itemize}\enskip
+
+%\cvsubsection{Robotics}
+%\begin{itemize}
+%    \item  Compiled a list of mechanical constraints for an AUV such as keeping all high power hardware in the same CNC enclosure, adding bouyancy devices to ensure positive bouyancy, material selection, etc.
+%    \item  Used multiple programming languages (C/C++/Python) to link ROS noetic on Ubuntu Focal with the AUV embedded system at AUVIC to send messages over a CAN bus. 
+%    \item  Programmed C I2C firmware on a FreeRTOS device to program a temperature sensor and a humidity sensor.
+%\end{itemize}
+
+%\cvsubsection{Electrical Drive Systems}
+%\begin{itemize}
+%    \item Comfortable with load torque analysis of DC, induction, and Syncronous motors.
+%    \item Comfortable with speed control analysis of DC, Induction, and Syncronous motors.
+%    \item Comfortable with braking analysis of DC, Induction, and Syncronous motors.
+%\end{itemize}
+
+%\cvsubsection{Quality Assurance/Control}
+%\begin{itemize}
+%    \item Unit Testing: Used gunit and unittest to confirm if my C++ methods are giving the expected output.
+%    \item Integration Testing: Introduced Travis CI to AUVIC to run build tests on ros nodes, C++ methods, and Python scripts before merging pull requests.
+%    \item Created an electrical overview to show the power requirements and communication buses of AUVIC's embedded system to members.
+%\end{itemize}
+
+% \cvsubsection{Application Development}
+% \begin{itemize}
+%     \item Continuous Integration Pipeline: Created a pipeline to run tests on \\ pull-requests before merging to master. This will minimize new bugs appearing in the AUV system.
+%     \item Wrote unit and integration tests in C++ and Python to test AUV \\functions.
+%     \item Improved AUVIC's development practices by introducing an Agile \\Workflow using Jira.
+% \end{itemize}
+
+% \cvsubsection{Web Development}
+% \begin{itemize}
+%     \item Configured DNS settings of custom domains on Web Hosting Canada.
+%     \item Deployed a Wordpress site using UVic's server.
+%     \item Understand the server-client model and have practiced using HTML, CSS, and Javascript to make a game.
+% \end{itemize}
+
+% \cvsubsection{Administration}
+% \begin{itemize}
+%     \item Created and presented PowerPoint's to get companies to sponsor \\AUVIC.
+%     \item Software lead: Assisted members of AUVIC in software development of AUV functions.
+%     \item Host bi-weekly meetings with the leads of AUVIC to discuss direction of AUV development and goals for the month.
+% \end{itemize}
+%==================================================
+
+\cvsection{Personal Projects}
+\cvsubsection{Haze Removal - C++ Image Processing}
+This command line application removes fog and haze in images by using dark channel prior and several other filters. Created from Rachel Yuen's (UW-Madison) matlab script. The Robot Operating System lacks Matlab support, so I rewrote the script in C++ to test it on AUVIC's AUV.
+
+\cvsubsection{Audio-Effects PCB - C Signal Processing}
+An embedded application for the STM32F0xx discovery board. This board takes an audio signal and then filters it with a butterworth filter before entering the ADC on the STM. The STM then applies either an echo or pitching effect to the signal via buttons  before being sent out of the DAC to be played through a speaker for everyone to enjoy.
+
+%\cvsubsection{Street Traffic Simulator - C Real-Time Operating \\Systems}
+%Simulates a one way street with a traffic light at different rates of traffic via LEDs. Uses 4 RTOS tasks and communicates with one another using queues. Rate of traffic is adjusted using a \\potentiometer.
+%\divider
+%\cvsubsection{Aircraft Weight Shifter -  Electrical Drive Systems}
+%Presented a weight shifting solution for an aircraft using requirements my professor was given. Its purpose was to adjust an aircrafts centre of gravity to reduce its pitching moment.
+
+% \cvsubsection{Coup online - HTML/CSS/Javascript}
+% Building a web game based on the "Coup" by Rikki Tahta to play with my friends while in quarantine. This game is not released to the public.
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+%================================================
+
+
+
+
+
+
+
+\switchcolumn
+
+
+
+
+
+
+
+
+
+
+\cvsection{Work Experience}
+\cvevent{Junior Electronics Engineer Co-op}{Autonomous Underwater Vehicle IC \\(AUVIC)}{May 2020 -- Ongoing}{Victoria, BC}
+\begin{itemize}
+\item Quality Control: Introduced continuous \\integration with Github Actions and agile \\workflows with Jira.
+\item Software Development: Wrote C++ and \\Python code to enable the main computer \\to send/receive data from the CAN bus.  
+\item PCB design: USB-to-CAN dongle | Pinger
+\end{itemize}
+
+\cvsection{Volunteer Experience}
+\begin{itemize}
+  \item Ship2Shore: Ran an activity for middle school students who are interested in engineering.
+  \item Homeshow: Organized office papers and \\maintained records.
+  \item Ridge Meadows College: Taught ESL to adults.
+\end{itemize}
+
+\cvsection{Skills}
+%\cvskill{Public Speaking}{4}
+%\cvskill{Management}{4}
+\cvskill{Project Records}{3}
+\cvskill{Attention To Details}{4}
+\cvskill{Learning Ability}{4}
+\cvskill{Altium Designer}{3}
+\cvskill{Programming}{3}
+%\cvskill{Communication}{4}
+%\cvskill{Electrical}{5}
+%\cvskill{C/C++/Python}{4}
+%\cvskill{Python}{4}
+%\cvskill{Cross-platform dev.}{3}
+%\cvskill{FreeRTOS}{4}
+%\cvskill{Soldering}{5}
+%\cvskill{Oscilloscope}{3}
+%\cvskill{Logic Analyzer}{3}
+%\cvskill{Signal Generator}{3}
+% \cvskill{MS Office}{3}
+% \cvskill{C++/Python}{4}
+% \cvskill{Organization}{5}
+% \cvskill{HTML/CSS/JS}{3}
+
+\cvsection{Education}
+\cvevent{Bachelor of Computer Engineering}{University of Victoria}{Sept. 2016 - Ongoing}{Victoria, BC}
+Relevant courses: Not Applicable% ECE 458 (Communication Networks), ECE 255 (Computer Architecture)
+%CSC 111/115 (C/C++ programming with Engineering applications), ECE 488 (Electrical \\Power Systems), ECE 482 (Electrical Drive Systems), ECE 241 (Digital Design), ECE 370 (\\Electromechanical Energy Conversion)
+
+\cvsection{Qualities}
+\cvachievement{\faBasketballBall}{Persistence}{I went from a substitute basketball player to a starter in a single year.}
+\cvachievement{\faLanguage}{Bilingual}{Fluent in English and Punjabi.}
+\cvachievement{\faCar}{Modding Cars}{Installed an aftermarket sound system.}
+
+\cvsection{Extra Qualifications}
+\cvachievement{\faCircle}{Work Availablity}{ \textbf{4 months} }
+\cvachievement{\faCircle}{MS Office}{Proficent with Excell, Word, OneNote, and PowerPoint.}
+
+\end{paracol}
+
+\end{document}

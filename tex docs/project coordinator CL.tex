@@ -1,0 +1,127 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage[none]{hyphenat}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{Black}{HTML}{000000}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{Black}
+\colorlet{body}{SlateGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+% My variables to change here
+%
+%
+\newcommand{\jobTitle}{\large Co-op Developer Student (4M)}
+\newcommand{\jobTitlePara}{\large Project Coordinator}
+\newcommand{\company}{Regroove Solutions}
+\newcommand{\address}{101-7161 W Saanich Rd \\Brentwood Bay BC \\ CA V8M 1P7}
+%
+%
+%
+
+
+\begin{document}
+\name{Amanpreet Singh Nijjar}
+\tagline{Fourth Year Computer Engineering Undergraduate Student}
+\personalinfo{
+  \email{anijjar@uvic.ca}
+  \phone{604-500-5071}
+  \mailaddress{11988 237st, Maple Ridge, BC V4R 2C8}
+  \linkedin{ca.linkedin.com/in/anijjar19}
+  \github{github.com/anijjar}
+  \linebreak
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+% Insert the Address and stuff
+\textbf{\color{VividPurple}\company}\\
+\address  \linebreak \\
+
+\cvsection{Letter of Intent - \jobTitle}
+Attention \company, \linebreak \\
+
+My name is Amanpreet Nijjar and I am a fourth year computer engineering student from the University of Victoria, located in Victoria BC, but live in Maple Ridge BC. A little about myself: I enjoy hiking around the local lakes of my home, trying different foods, and helping out at my uncles auto shop. My peers describe me as spontaneous, confident, and motivated because of my ability to execute activities with little to no planning time. My best experiences have been organizing a 24-hour local expedition eating foods in around Vancouver, New Westminster, and Mission; an early morning picnic at Cadboro Bay, and after-hours basketball session with the old team-mates. \linebreak \\
+
+I believe I would be a good fit for your company because I am a strong team player and am capable of self-management. On my co-op with the Autonomous Underwater Vehicle Interdisciplinary Club (AUVIC) as a Junior Electronics Engineer, I was responsible for setting my own goals and deadlines in regards to the overarching goal of implementing a Controller-Area Network (CAN) for the autonomous underwater vehicle, Trident, embedded network. Moreover, I had the responsibility in creating better software development practices and also had to create a knowledge bank. \linebreak \\
+
+In regards to my main goal, I broke the problem into two modules - electrical design and software development - and allocated time accordingly. Most of my time was spent on software development. Since I was in charge of the software division, I decided my time would be best spent working on the software side of the project to develop good methodologies so the software division can follow my example. The software I developed was built using the Robot-Operating System (ROS). This is a framework that creates "nodes" using either C++ or Python to execute specific tasks, such as relaying data, processing service requests, and more. The code allowed high level functions, such as the computer vision setup , to directly connect with the firmware on the embedded network.
+ \linebreak \\
+ 
+The problem that AUVIC faces is retaining knowledge. Each year, members graduate and knowledge is lost because things were not properly recorded. To solve this problem, I created several documents stored on Google Drive. For example, one document for the electrical division outlines how to properly design and test a printed circuit board. Each member can now record their design in a central location and mistakes made previously can be avoided.\linebreak \\
+
+Thank you for taking the time to read my application. I really like to hear that {\company} pushes for an environment where ideas can flow naturally and everyone is looking for different sources to grow. I hope my leadership experience and ability to deliver results with minimum supervision is enough to secure me a conversation with one of your representatives. If so, please feel to contact me at anijjar@uvic.ca anytime. \linebreak \linebreak 
+
+All the best, \linebreak \linebreak \\
+
+Amanpreet Nijjar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
